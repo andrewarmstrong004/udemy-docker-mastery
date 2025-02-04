@@ -27,3 +27,8 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
+
+The code used to launch the container is:  
+{% highlight cmd %}
+docker container run -p 80:4000 -v $(pwd):site pretfisher/jekyll-serve
+{% endhighlight %}
